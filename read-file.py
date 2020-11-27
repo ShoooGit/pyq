@@ -3,4 +3,4 @@ donations = f.readlines()
 f.close
 
 for donation in donations:
-    print(donation)
+    print(donation.strip())

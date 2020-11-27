@@ -1,4 +1,6 @@
 f = open("read.txt", "r", encoding="utf-8")
-donations = f.read()
-f.close()
-print(donations)
+donations = f.readlines()
+f.close
+
+for donation in donations:
+    print(donation)

@@ -40,3 +40,24 @@ print("items.issubset({1, 3, 4}):", result2)
 # 引数が部分集合か
 result3 = items.issuperset({4})
 print("items.issuperset({4}):", result3)
+
+s1 = set('ab')
+s2 = set('bc')
+print("s1:", s1)
+print("s2:", s2)
+
+# 差集合
+result1 = s1.difference(s2)
+print("s1.difference(s2):", result1)
+
+# 積集合
+result2 = s1.intersection(s2)
+print("s1.intersection(s2):", result2)
+
+# 対称差
+result3 = s1.symmetric_difference(s2)
+print("s1.symmetric_difference(s2):", result3)
+
+# 和集合
+result4 = s1.union(s2)
+print("s1.union(s2):", result4)
